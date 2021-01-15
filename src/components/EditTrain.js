@@ -13,7 +13,6 @@ export default function EditTrain(props){
     }
     )
     const handleClickOpen = () => {
-        console.log(props.training);
         setTraining({date: props.training.date, duration: props.training.duration, activity: props.training.activity})
         setOpen(true);
     };
