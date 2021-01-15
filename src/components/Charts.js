@@ -23,7 +23,7 @@ export default function Charts(props){
       duration: _.sumBy(trainings, 'duration')
       
     })).value()
-    console.log(ans)
+   
     return(<div>  
       <h6>Click the bar for exact duration in minutes</h6>
       <BarChart
