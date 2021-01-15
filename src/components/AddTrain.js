@@ -32,7 +32,7 @@ const addTrain = () => {
         Add a new training session
       </Button>
       <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
-        <DialogTitle id="form-dialog-title">Subscribe</DialogTitle>
+        <DialogTitle id="form-dialog-title">Add workout details</DialogTitle>
         <DialogContent>
         <TextField
             autoFocus
