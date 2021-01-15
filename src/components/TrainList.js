@@ -6,7 +6,7 @@ import moment from 'moment';
 import AddTrain from './AddTrain';
 import EditTrain from './EditTrain';
 import Button from '@material-ui/core/Button';
-import CustList from './CustList';
+import Charts from './Charts';
 import CustTrainings from './CustTrainings';
 import Snackbar from '@material-ui/core/Snackbar';
 import MuiAlert from '@material-ui/lab/Alert';
@@ -107,6 +107,10 @@ export default function TrainList(){
         {
             show: false,
             Cell: row => <CustTrainings saveTrain={saveTrain}/>
+        },
+        {
+            show: false,
+            Cell: row => <Charts trainings={trainings}/>
         }
     ]
 
@@ -121,7 +125,6 @@ export default function TrainList(){
         .then(res => fetchData())
         .catch(err => console.error(err))
     }
-
 
     const updateTrain = (training, link) => { 
         fetch(link, {
@@ -167,6 +170,7 @@ function filterNumber(filter, row) {
     String(row[id]).startsWith(filter.value)
     :           true    );
 }
+
 
 
 
