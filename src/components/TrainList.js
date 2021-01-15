@@ -139,7 +139,6 @@ export default function TrainList(){
     }
     return (
         <div>
-          <AddTrain saveTrain={saveTrain}/> 
           <p><b>Note!</b> To modify the time, you can write it on the textfield if the suggestions are unfit</p>
           <ReactTable filterable defaultFilterMethod={filterCaseInsensitive} sortable={true} columns={columns} data={trainings}></ ReactTable>
           <Snackbar open={open} autoHideDuration={3000} onClose={handleClose}>
