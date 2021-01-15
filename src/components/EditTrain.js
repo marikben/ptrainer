@@ -36,7 +36,7 @@ export default function EditTrain(props){
         Edit
       </Button>
       <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
-        <DialogTitle id="form-dialog-title">Edit car</DialogTitle>
+        <DialogTitle id="form-dialog-title">Edit workout</DialogTitle>
         <DialogContent>
           <TextField
             autoFocus
