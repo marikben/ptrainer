@@ -13,9 +13,7 @@ export default function CustTrainings(props){
     const [workout, setWorkout] = useState([]);
     
     const fetchData = (props) => {
-        console.log(props.ctraining)
-        console.log(props.cust)
-        fetch(props) //tämä on se oikea treenilinkki
+        fetch(props) 
         .then(response => response.json())
         .then(data => setWorkout(data.content))
     }
