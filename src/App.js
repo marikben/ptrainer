@@ -5,6 +5,7 @@ import CustList from './components/CustList';
 import TrainList from './components/TrainList';
 import Home from "./components/Home";
 import Calendar from "./components/Calendar";
+import Charts from "./components/Charts";
 import Button from '@material-ui/core/Button';
 import CustTrainings from './components/CustTrainings';
 import AppBar from '@material-ui/core/AppBar';
@@ -60,6 +61,7 @@ function App() {
         <MenuItem onClick={handleClose}><Link to="/customers"><Button>Customers</Button></Link>{' '}</MenuItem>
         <MenuItem onClick={handleClose}><Link to="/trainings"><Button>Workout schedule</Button></Link>{' '}</MenuItem>
         <MenuItem onClick={handleClose}><Link to="/calendar"><Button>Calendar</Button></Link>{' '}</MenuItem>
+        <MenuItem onClick={handleClose}><Link to="/statistics"><Button>Statistics</Button></Link>{' '}</MenuItem>
       </Menu>
      
       </AppBar>
@@ -67,7 +69,7 @@ function App() {
       <Route path = "/customers" component={CustList}/>
       <Route path = "/trainings" component={TrainList}/>
       <Route path = "/calendar" component={Calendar}/>
-      <Route path = "/customerworkouts" component={CustTrainings}/>
+      <Route path = "/statistics" component={Charts}/>
       <Route render={() => <h1> Page not found</h1>}/></Switch>
      
     
