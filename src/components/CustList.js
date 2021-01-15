@@ -48,7 +48,6 @@ export default function CustList(props){
       };
 
     const deleteCust = (link) => {
-        console.log(link)
         if (window.confirm('Are you sure?')){
         fetch(link, {method: 'DELETE'})
         .then(handleClick())
